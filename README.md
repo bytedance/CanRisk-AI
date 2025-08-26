@@ -31,11 +31,18 @@ pip install -U 'volcengine-python-sdk[ark]'
 1. 摘要过滤  
    - 本项目中的摘要来自PubMed、Cochrane和Embase。检索式信息将在文章发表后展示于附件中。
    - 输入文件为`tsv`格式，无需列名，第一列为无重复的摘要编号（可以自行定义），第二列为摘要内容。
-    ```shell
-    python 1.Abstract_filter.py input_file.tsv output_file.tsv
-    ```
-2. pdf解析
-3. 全文过滤
+   ```shell
+   python 1.Abstract_filter.py input_file.tsv output_file.tsv
+   ```
+2. pdf解析  
+   - 有很有优秀的pdf解析工具，如[Dolphin](https://github.com/bytedance/Dolphin), [docling](https://github.com/docling-project/docling),
+[LlamaParse](https://cloud.llamaindex.ai/)等。受限于计算资源，以及对中间文件的利用（尤其是figures in literature），本研究采用[MinerU](https://github.com/opendatalab/MinerU)进行全文解析。
+3. 全文过滤  
+   - 输入文件为`tsv`格式，无需列名，第一列为无重复的摘要编号（可以自行定义），第二列为文献对应的 pdf 解析文件路径。
+   - 注意 pdf 解析文件请采用txt格式（可以是markdown格式）。
+   ```shell
+   python 2.Full_text_filter.py input_file.tsv output_file.tsv
+   ```
 4. GRAG构建
 5. 多智能体构建
 6. 数据库构建
@@ -50,5 +57,5 @@ pip install -U 'volcengine-python-sdk[ark]'
 ## License
 
 ---
-Released under MIT licence.
+This project is licensed under the MIT License - see the LICENSE file for details.
 

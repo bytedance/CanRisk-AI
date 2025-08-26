@@ -4,10 +4,10 @@ import asyncio
 import pandas as pd
 from scripts.base import json_parse
 from volcenginesdkarkruntime import AsyncArk
-from scripts.prompts import prompt_abstract_filter
-from scripts.llm_info import api_key, model_abstract_filter
+from scripts.prompts import prompt_full_text_filter
+from scripts.llm_info import api_key, model_full_text_filter
 
-MAX_CONCURRENT_REQUESTS = 100
+MAX_CONCURRENT_REQUESTS = 30
 client = AsyncArk(api_key=api_key, timeout=3600 * 1)
 
 
@@ -15,7 +15,7 @@ async def fetch_model_response(session_id, content, semaphore, model, cycle_num=
     messages = [
         {
             "role": "system",
-            "content": prompt_abstract_filter
+            "content": prompt_full_text_filter
         },
         {
             "role": "user",
@@ -28,8 +28,8 @@ async def fetch_model_response(session_id, content, semaphore, model, cycle_num=
                 completion = await client.chat.completions.create(
                     model=model,
                     messages=messages,
-                    temperature=0.01,
-                    top_p=0.7,
+                    temperature=0.1,
+                    # top_p=0.7,
                 )
                 response_content = ' '.join(
                     completion.choices[0].message.content.replace('，', ',').replace('：', ':').split()
@@ -56,22 +56,22 @@ async def handle_multiple_sessions(sessions, model, cycle_num=5):
 
 
 async def main():
-    abstract_file_name = sys.argv[1]
+    file_path = sys.argv[1]
     output_file_name = sys.argv[2]
 
     if os.path.exists(output_file_name):
         sys.exit('Output file already exists.')
 
-    df = pd.read_table(abstract_file_name, header=None)
+    df = pd.read_table(file_path, header=None)
     df.rename(
         columns={
             0: 'session_id',
-            1: 'abstract'
+            1: 'text_path'
         },
         inplace=True
     )
-    sessions = dict(zip(list(df['session_id']), list(df['abstract'])))
-    results = await handle_multiple_sessions(sessions, model_abstract_filter)
+    sessions = dict(zip(list(df['session_id']), list(df['text_path'])))
+    results = await handle_multiple_sessions(sessions, model_full_text_filter)
 
     result_dict = {}
     for session_id, response in results:
