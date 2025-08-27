@@ -70,7 +70,17 @@ async def main():
         },
         inplace=True
     )
-    sessions = dict(zip(list(df['session_id']), list(df['text_path'])))
+
+    file_path_dict = dict(zip(list(df['session_id']), list(df['text_path'])))
+    sessions = {}
+    for file_id, file in file_path_dict.items():
+        try:
+            with open(file) as f:
+                file_content = f.read()
+            sessions[file_id] = file_content
+        except:
+            print(f'Can not read file: {file_id}')
+
     results = await handle_multiple_sessions(sessions, model_full_text_filter)
 
     result_dict = {}

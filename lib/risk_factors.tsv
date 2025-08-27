@@ -1,0 +1,231 @@
+ID	level 1	level 2	PE（2020 both）	risk factor	risk factor2
+0	1	Environmental factors	"unsafe water source
+不安全的水源"	35.19(22.23 to 50.17)	unsafe water source	Environmental factors: unsafe water source
+1	2	Environmental factors	"unsafe sanitation
+不安全的卫生条件"	32.41(29.45 to 35.43)	unsafe sanitation	Environmental factors: unsafe sanitation
+2	3	Environmental factors	"no access to handwashing facility
+没有洗手设施"	23.67(11.77 to 27.47)	no access to handwashing facility	Environmental factors: no access to handwashing facility
+3	4	Environmental factors	"particulate matter pollution
+颗粒物污染"	37.97(31.42 to 45.81)	particulate matter pollution	Environmental factors: particulate matter pollution
+4	5	Environmental factors	"ambient ozone pollution
+环境臭氧污染"	23.30(20.59 to 27.46)	ambient ozone pollution	Environmental factors: ambient ozone pollution
+5	6	Environmental factors	"ultraviolet radiation
+紫外线辐射"		ultraviolet radiation	Environmental factors: ultraviolet radiation
+6	7	Environmental factors	"residential radon
+住宅氡"	23.78(0.00 to 35.33)	residential radon	Environmental factors: residential radon
+7	8	Environmental factors	"lead exposure
+铅暴露"	39.12(0.00 to 46.13)	lead exposure	Environmental factors: lead exposure
+8	9	Environmental factors	"high temperature
+高温"	38.48(32.68 to 44.51)	high temperature	Environmental factors: high temperature
+9	10	Environmental factors	"Low temperature
+低温"	24.25(22.38 to 26.84)	Low temperature	Environmental factors: Low temperature
+10	11	Occupational risks	"occupational exposure to asbestos
+职业接触石棉"	2.03(1.86 to 2.17)	occupational exposure to asbestos	Occupational risks: occupational exposure to asbestos
+11	12	Occupational risks	"occupational exposure to arsenic
+职业接触砷"	0.49(0.15 to 0.92)	occupational exposure to arsenic	Occupational risks: occupational exposure to arsenic
+12	13	Occupational risks	"occupational exposure to benzene
+职业接触苯"	0.98(0.49 to 2.01)	occupational exposure to benzene	Occupational risks: occupational exposure to benzene
+13	14	Occupational risks	"occupational exposure to beryllium
+职业接触铍"	0.10(0.10 to 0.10)	occupational exposure to beryllium	Occupational risks: occupational exposure to beryllium
+14	15	Occupational risks	"occupational exposure to cadmium
+职业接触镉"	0.22(0.21 to 0.23)	occupational exposure to cadmium	Occupational risks: occupational exposure to cadmium
+15	16	Occupational risks	"occupational exposure to chromium
+职业接触铬"	0.51(0.49 to 0.52)	occupational exposure to chromium	Occupational risks: occupational exposure to chromium
+16	17	Occupational risks	"occupational exposure to diesel engine exhaust
+职业接触柴油机尾气"	2.63(2.58 to 2.69)	occupational exposure to diesel engine exhaust	Occupational risks: occupational exposure to diesel engine exhaust
+17	18	Occupational risks	"occupational exposure to formaldehyde
+职业接触甲醛"	0.96(0.93 to 0.99)	occupational exposure to formaldehyde	Occupational risks: occupational exposure to formaldehyde
+18	19	Occupational risks	"occupational exposure to nickel
+职业接触镍"	0.49(0.13 to 1.30)	occupational exposure to nickel	Occupational risks: occupational exposure to nickel
+19	20	Occupational risks	"occupational exposure to polycyclic aromatic hydrocarbons
+职业接触多环芳烃"	1.04(1.01 to 1.06)	occupational exposure to polycyclic aromatic hydrocarbons	Occupational risks: occupational exposure to polycyclic aromatic hydrocarbons
+20	21	Occupational risks	"occupational exposure to silica
+职业接触硅尘"	4.77(2.22 to 11.52)	occupational exposure to silica	Occupational risks: occupational exposure to silica
+21	22	Occupational risks	"occupational exposure to sulfuric acid
+职业接触硫酸"	1.06(0.67 to 2.10)	occupational exposure to sulfuric acid	Occupational risks: occupational exposure to sulfuric acid
+22	23	Occupational risks	"occupational exposure to trichloroethylene
+职业接触三氯乙烯"	0.30(0.29 to 0.31)	occupational exposure to trichloroethylene	Occupational risks: occupational exposure to trichloroethylene
+23	24	Occupational risks	"occupational asthmagens
+职业性哮喘原"	17.61(15.51 to 20.17)	occupational asthmagens	Occupational risks: occupational asthmagens
+24	25	Occupational risks	"occupational particulate matter, gases, and fumes
+职业性颗粒物、气体和烟雾"	10.22(8.39 to 12.43)	occupational particulate matter, gases, and fumes	Occupational risks: occupational particulate matter, gases, and fumes
+25	26	Occupational risks	"occupational noise
+职业性噪声"	11.08(10.66 to 11.64)	occupational noise	Occupational risks: occupational noise
+26	27	Occupational risks	"occupational injuries
+职业伤害"		occupational injuries	Occupational risks: occupational injuries
+27	28	Occupational risks	"occupational ergonomic factors
+职业人体工程学因素"	16.23(15.00 to 17.77)	occupational ergonomic factors	Occupational risks: occupational ergonomic factors
+28	29	Occupational risks	"occupational exposure to night shift work
+职业性接触夜班工作"		occupational exposure to night shift work	Occupational risks: occupational exposure to night shift work
+29	30	Occupational risks	"occupational exposure to gasoline
+职业性汽油暴露"		occupational exposure to gasoline	Occupational risks: occupational exposure to gasoline
+30	31	Violence and sexual abuse	"childhood sexual abuse
+童年性虐待"	6.35(5.93 to 6.94)	childhood sexual abuse	Violence and sexual abuse: childhood sexual abuse
+31	32	Violence and sexual abuse	"bullying victimisation
+欺凌受害者"	7.82(3.67 to 14.53)	bullying victimisation	Violence and sexual abuse: bullying victimisation
+32	33	Violence and sexual abuse	"intimate partner violence
+亲密伴侣暴力"	22.18(14.67 to 24.40)	intimate partner violence	Violence and sexual abuse: intimate partner violence
+33	34	Tobacco use	"smoking
+吸烟"	16.23(15.80 to 16.69)	smoking	Tobacco use: smoking
+34	35	Tobacco use	"chewing tobacco
+嚼烟"	4.96(4.62 to 5.33)	chewing tobacco	Tobacco use: chewing tobacco
+35	36	Tobacco use	"secondhand smoke 
+二手烟"	34.25(32.06 to 35.04)	secondhand smoke 	Tobacco use: secondhand smoke 
+36	37	Alcohol use	"Alcohol use
+饮酒使用"	12.63(10.04 to 19.03)	Alcohol use	Alcohol use: Alcohol use
+37	38	Drug use	"Immunesuppressive agent
+免疫抑制剂"		Immunesuppressive agent	Drug use: Immunesuppressive agent
+38	39	Drug use	Drug use (non-addiction, excl. Immunesuppressive agent)		Drug use (non-addiction, excl. Immunesuppressive agent)	Drug use: Drug use (non-addiction, excl. Immunesuppressive agent)
+39	40	Drug use	"Drug use (addiction)
+毒品使用 "	0.49(0.42 to 0.57)	Drug use (addiction)	Drug use: Drug use (addiction)
+40	41	Dietary risks	"diet low in fruits
+低水果饮食"	40.79(34.77 to 42.81)	diet low in fruits	Dietary risks: diet low in fruits
+41	42	Dietary risks	"diet low in vegetables
+低蔬菜饮食"	27.00(16.99 to 32.58)	diet low in vegetables	Dietary risks: diet low in vegetables
+42	43	Dietary risks	"diet low in legumes
+低豆类饮食"	31.58(0.00 to 38.80)	diet low in legumes	Dietary risks: diet low in legumes
+43	44	Dietary risks	"diet low in whole grains
+低全谷物饮食"	43.86(36.19 to 49.34)	diet low in whole grains	Dietary risks: diet low in whole grains
+44	45	Dietary risks	"diet low in nuts and seeds
+低坚果和种子饮食"	31.10(29.75 to 32.91)	diet low in nuts and seeds	Dietary risks: diet low in nuts and seeds
+45	46	Dietary risks	"diet low in milk
+低奶制品饮食"	64.64(62.65 to 73.46)	diet low in milk	Dietary risks: diet low in milk
+46	47	Dietary risks	"diet high in red meat 
+高红肉饮食"	29.70(0.00 to 40.10)	diet high in red meat 	Dietary risks: diet high in red meat 
+47	48	Dietary risks	"diet high in processed meat
+高加工肉制品饮食"	16.43(13.19 to 17.26)	diet high in processed meat	Dietary risks: diet high in processed meat
+48	49	Dietary risks	"diet high in sugar-sweetened beverages
+高糖饮料饮食"	18.91(15.37 to 20.03)	diet high in sugar-sweetened beverages	Dietary risks: diet high in sugar-sweetened beverages
+49	50	Dietary risks	"diet low in fiber
+低纤维饮食"	26.22(14.12 to 28.39)	diet low in fiber	Dietary risks: diet low in fiber
+50	51	Dietary risks	"diet low in calcium
+低钙饮食"	19.68(18.25 to 28.75)	diet low in calcium	Dietary risks: diet low in calcium
+51	52	Dietary risks	"diet low in seafood omega-3 fatty acids
+低海鲜欧米茄-3脂肪酸饮食"	35.54(28.03 to 43.31)	diet low in seafood omega-3 fatty acids	Dietary risks: diet low in seafood omega-3 fatty acids
+52	53	Dietary risks	"diet low in polyunsaturated fatty acids
+低多不饱和脂肪酸饮食"	75.60(44.00 to 87.23)	diet low in polyunsaturated fatty acids	Dietary risks: diet low in polyunsaturated fatty acids
+53	54	Dietary risks	"diet high in trans fatty acids
+高反式脂肪酸饮食"	6.39(5.30 to 7.40)	diet high in trans fatty acids	Dietary risks: diet high in trans fatty acids
+54	55	Dietary risks	"diet high in sodium
+高钠饮食"	40.53(12.10 to 79.53)	diet high in sodium	Dietary risks: diet high in sodium
+55	56	Dietary risks	"malnutrition
+营养不良"	1.68 (1.52 to 1.88)	malnutrition	Dietary risks: malnutrition
+56	57	Dietary risks	"Tea or Cha
+茶"		Tea or Cha	Dietary risks: Tea or Cha
+57	58	Dietary risks	"Caffeine or coffee
+咖啡因或咖啡"		Caffeine or coffee	Dietary risks: Caffeine or coffee
+58	59	Dietary risks	"low in vitamins
+低维生素"		low in vitamins	Dietary risks: low in vitamins
+59	60	Dietary risks	"low in minerals excl. calcium
+低矿物质(除钙)"		low in minerals excl. calcium	Dietary risks: low in minerals excl. calcium
+60	61	Dietary risks	"very hot food or beverages(>65℃)
+热饮或食物(>65℃)"	1.46 (1.22 to 1.73)	very hot food or beverages(>65℃)	Dietary risks: very hot food or beverages(>65℃)
+61	62	Unsafe sex	"Unsafe sex
+不安全性行为"		Unsafe sex	Unsafe sex: Unsafe sex
+62	63	Child and maternal malnutrition	"suboptimal breastfeeding
+次优母乳喂养"	32.98(30.14 to 36.42)	suboptimal breastfeeding	Child and maternal malnutrition: suboptimal breastfeeding
+63	64	Child and maternal malnutrition	"child wasting
+儿童消瘦"	4.50(2.99 to 5.94)	child wasting	Child and maternal malnutrition: child wasting
+64	65	Child and maternal malnutrition	"child stunting 
+儿童发育迟滞"	16.32(14.77 to 17.80)	child stunting 	Child and maternal malnutrition: child stunting 
+65	66	Child and maternal malnutrition	"low birthweight and short gestation
+低出生体重和早产"	22.77(20.61 to 25.16)	low birthweight and short gestation	Child and maternal malnutrition: low birthweight and short gestation
+66	67	Child and maternal malnutrition	"iron deficiency (Child and maternal malnutrition)
+缺铁"	7.33(6.05 to 8.95)	iron deficiency (Child and maternal malnutrition)	Child and maternal malnutrition: iron deficiency (Child and maternal malnutrition)
+67	68	Child and maternal malnutrition	"vitamin A deficiency (Child and maternal malnutrition)
+维生素A缺乏"	10.71(0.00 to 15.74)	vitamin A deficiency (Child and maternal malnutrition)	Child and maternal malnutrition: vitamin A deficiency (Child and maternal malnutrition)
+68	69	Child and maternal malnutrition	"zinc deficiency (Child and maternal malnutrition)
+锌缺乏"	6.37(0.00 to 17.76)	zinc deficiency (Child and maternal malnutrition)	Child and maternal malnutrition: zinc deficiency (Child and maternal malnutrition)
+69	70	Low physical activity	"Low physical activity
+低体力活动"	19.88(17.06 to 23.07)	Low physical activity	Low physical activity: Low physical activity
+70	71	High fasting plasma glucose	"diabetes
+糖尿病"	6.67 (6.21 to 7.16)	diabetes	High fasting plasma glucose: diabetes
+71	72	"Hyperlipidemia
+高脂血症"	"Low HDL cholesterol 
+低高密度脂蛋白"		Low HDL cholesterol 	"Hyperlipidemia
+高脂血症: Low HDL cholesterol "
+72	73	"Hyperlipidemia
+高脂血症"	"High Triglycerides
+高甘油三酯"		High Triglycerides	"Hyperlipidemia
+高脂血症: High Triglycerides"
+73	74	"Hyperlipidemia
+高脂血症"	"High LDL cholesterol
+高低密度脂蛋白"	45.38(30.83 to 63.10)	High LDL cholesterol	"Hyperlipidemia
+高脂血症: High LDL cholesterol"
+74	75	Overweight or Obesity	"Overweight
+超重"	42.1(41.7 to 42.6)	Overweight	Overweight or Obesity: Overweight
+75	76	Overweight or Obesity	"Obesity
+肥胖"	14.9(14.7 to 15.2)	Obesity	Overweight or Obesity: Obesity
+76	77	Low bone mineral density	"low bone mineral density
+低骨密度"	23.57(18.17 to 30.28)	low bone mineral density	Low bone mineral density: low bone mineral density
+77	78	Infectious diseases	"helicobacter pylori
+幽门螺杆菌"		helicobacter pylori	Infectious diseases: helicobacter pylori
+78	79	Infectious diseases	"hepatitis B virus
+乙型肝炎病毒"	3.88 (3.57 to 4.20)	hepatitis B virus	Infectious diseases: hepatitis B virus
+79	80	Infectious diseases	"hepatitis C virus
+丙型肝炎病毒"	1.81 (1.46 to 2.18)	hepatitis C virus	Infectious diseases: hepatitis C virus
+80	81	Infectious diseases	"human herpes virus type 8: Kaposi sarcoma herpes virus
+人类疱疹病毒8型：卡波西肉瘤疱疹病毒"		human herpes virus type 8: Kaposi sarcoma herpes virus	Infectious diseases: human herpes virus type 8: Kaposi sarcoma herpes virus
+81	82	Infectious diseases	"human immunodeficiency virus
+人类免疫缺陷病毒"	0.52 (0.49 to 0.55)	human immunodeficiency virus	Infectious diseases: human immunodeficiency virus
+82	83	Infectious diseases	"human papillomavirus
+人类乳头瘤病毒"		human papillomavirus	Infectious diseases: human papillomavirus
+83	84	Infectious diseases	"Epstein-Barr virus
+爱泼斯坦-巴尔病毒"		Epstein-Barr virus	Infectious diseases: Epstein-Barr virus
+84	85	Infectious diseases	"Other infectious diseases
+其他传染病"	1.67 (1.63 to 1.71)	Other infectious diseases	Infectious diseases: Other infectious diseases
+85	86	Pulmonary diseases	"chronic obstructive pulmonary disease
+慢性阻塞性肺病"	2.77 (2.53 to 3.03)	chronic obstructive pulmonary disease	Pulmonary diseases: chronic obstructive pulmonary disease
+86	87	Digestive diseases	"Cirrhosis or liver fibrosis
+肝硬化或肝纤维化"	22.16 (20.57 to 23.81)	Cirrhosis or liver fibrosis	Digestive diseases: Cirrhosis or liver fibrosis
+87	88	Digestive diseases	"inflammatory bowel disease
+炎症性肠病"	0.05 (0.04 to 0.06)	inflammatory bowel disease	Digestive diseases: inflammatory bowel disease
+88	89	Digestive diseases	"gastroesophageal reflux disease
+胃食管反流病"	10.76 (9.54 to 12.07)	gastroesophageal reflux disease	Digestive diseases: gastroesophageal reflux disease
+89	90	Digestive diseases	"barrett's esophagus
+巴雷特食管"		barrett's esophagus	Digestive diseases: barrett's esophagus
+90	91	Digestive diseases	"chronic pancreatitis
+慢性胰腺炎"	0.08 (0.06 to 0.10)	chronic pancreatitis	Digestive diseases: chronic pancreatitis
+91	92	Digestive diseases	"hiatal hernia
+食管裂孔疝"		hiatal hernia	Digestive diseases: hiatal hernia
+92	93	Digestive diseases	"Gallbladder and biliary diseases
+胆囊疾病"	3.27 (2.80 to 3.82)	Gallbladder and biliary diseases	Digestive diseases: Gallbladder and biliary diseases
+93	94	Digestive diseases	"Others digestive diseases
+其他消化系统疾病"		Others digestive diseases	Digestive diseases: Others digestive diseases
+94	95	Neurological and psychiatric disorders	"epilepsy
+癫痫"	0.31 (0.24 to 0.39)	epilepsy	Neurological and psychiatric disorders: epilepsy
+95	96	Neurological and psychiatric disorders	"major psychiatric condition
+重大精神状况"		major psychiatric condition	Neurological and psychiatric disorders: major psychiatric condition
+96	97	Neurological and psychiatric disorders	"anxiety and behavioural disorders
+焦虑和行为障碍"	4.52 (3.88 to 5.29)	anxiety and behavioural disorders	Neurological and psychiatric disorders: anxiety and behavioural disorders
+97	98	Neurological and psychiatric disorders	"dementia
+痴呆"	0.72 (0.62 to 0.82)	dementia	Neurological and psychiatric disorders: dementia
+98	99	Neurological and psychiatric disorders	"sleep disorder
+睡眠障碍"		sleep disorder	Neurological and psychiatric disorders: sleep disorder
+99	100	Neurological and psychiatric disorders	Other Neurological and psychiatric disorders		Other Neurological and psychiatric disorders	Neurological and psychiatric disorders: Other Neurological and psychiatric disorders
+100	101	Kidney dysfunction	"Gout
+痛风"	0.74 (0.59 to 0.91)	Gout	Kidney dysfunction: Gout
+101	102	Kidney dysfunction	"chronic kidney diseases
+慢性肾脏疾病"	8.80 (8.22 to 9.43)	chronic kidney diseases	Kidney dysfunction: chronic kidney diseases
+102	103	Kidney dysfunction	"abnormal glomerular filtration rate
+肾小球滤过率异常"	0.14 (0.13 to 0.15)	abnormal glomerular filtration rate	Kidney dysfunction: abnormal glomerular filtration rate
+103	104	Circulatory System Diseases	"High systolic blood pressure
+高收缩压"	35.55(25.85 to 46.81)	High systolic blood pressure	Circulatory System Diseases: High systolic blood pressure
+104	105	Circulatory System Diseases	"atrial fibrillation and flutter
+心率失常和房颤"	0.67 (0.55 to 0.83)	atrial fibrillation and flutter	Circulatory System Diseases: atrial fibrillation and flutter
+105	106	Circulatory System Diseases	"cardiovascular disease
+心血管疾病"	7.89 (7.38 to 8.32)	cardiovascular disease	Circulatory System Diseases: cardiovascular disease
+106	107	Immune diseases	"autoimmune disease
+自身免疫性疾病"		autoimmune disease	Immune diseases: autoimmune disease
+107	108	Genetics and family history	"Genetics and family history
+遗传和家族性癌症"		Genetics and family history	Genetics and family history: Genetics and family history
+108	109	Personal cancer history	"first primary cancers or history of cancer
+第一原发癌症或患癌史"	1.09 (1.04 to 1.14)	first primary cancers or history of cancer	Personal cancer history: first primary cancers or history of cancer
+109	110	Socioeconomic status	"Education
+教育"		Education	Socioeconomic status: Education
+110	111	Socioeconomic status	"Low income or poverty
+低收入或贫困"		Low income or poverty	Socioeconomic status: Low income or poverty
+111	112	Socioeconomic status	"Socioeconomic status factors excl. education and income
+其他社会经济地位因素(除教育和收入)"		Socioeconomic status factors excl. education and income	Socioeconomic status: Socioeconomic status factors excl. education and income
+112	113	Medical intervention	"Surgery or operation
+手术"		Surgery or operation	Medical intervention: Surgery or operation

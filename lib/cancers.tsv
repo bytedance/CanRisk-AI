@@ -1,0 +1,40 @@
+ID	Cancer types	ICD-Code
+1	Lip, oral cavity	C00-06
+2	Salivary glands	C07-08
+3	Oropharynx	C09-10
+4	Nasopharynx	C11
+5	Hypopharynx	C12-13
+6	Oesophagus	C15
+7	Stomach	C16
+8	Colonrectum	C18-20
+9	Anus	C21
+10	Liver and intrahepatic bile ducts	C22
+11	Gallbladder and biliary tract	C23-24
+12	Pancreas	C25
+13	Larynx	C32
+14	Trachea, bronchus and lung	C33-34
+15	Melanoma of skin	C43
+16	Non-melanoma skin cancer	C44
+17	Mesothelioma	C45
+18	Kaposi sarcoma	C46
+19	Breast	C50
+20	Vulva	C51
+21	Vagina	C52
+22	Cervix uteri	C53
+23	Corpus uteri	C54
+24	Ovary	C56
+25	Penis	C60
+26	Prostate	C61
+27	Testis	C62
+28	Kidney	C64
+29	Bladder	C67
+30	Brain, central nervous system	C70-72
+31	Thyroid	C73
+32	Hodgkin lymphoma	C81
+33	Non-Hodgkin lymphoma	C82-86+C88
+34	Multiple myeloma	C90
+35	Leukaemia	C91-95
+36	Eye cancers	C69
+37	Small Intestine	C17
+38	Bone	C40-41
+39	Sarcomas excl. Kaposi sarcoma	8800,8811,8830,8840,9921,8990,9991,9040,9044,9120,9133,9150,9540,9581 (ICD-O-3)
