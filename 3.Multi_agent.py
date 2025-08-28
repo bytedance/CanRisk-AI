@@ -14,7 +14,6 @@ from scripts.level1_agents import cohort_agent, outcome_agent, cancer_agent, ris
 
 
 def get_args():
-    # 定义外部传参函数
     import argparse
     parser = argparse.ArgumentParser(description='multi agent for CanRisk-DB')
     parser.add_argument('-i', '--input_dir', type=str, required=True, help='The path to the input file.')
@@ -28,7 +27,6 @@ def get_args():
 
 
 async def main():
-    # 参数读取
     args = get_args()
     input_dir = args.input_dir
     out_path = args.out_dir
@@ -68,7 +66,6 @@ async def main():
     with open(f'{out_path}/chunks.txt', 'w', encoding='utf-8') as file:
         file.write(content)
 
-    # 2. 推理论文是否符合主题
     if theme:
         theme_class = await theme_classifier_agent(text_content, model_agent, lang)
         if theme_class['Decision'] == 'Rejected':
@@ -76,13 +73,11 @@ async def main():
             print(theme_class)
             return
 
-    # 3.1 grade等级判断
     if grade:
         grade_evaluator = await grade_agent(text_content, model_agent, lang)
         with open(f'{out_path}/grade_evaluator.json', 'w', encoding='utf-8') as file:
             json.dump(grade_evaluator, file, indent=4, ensure_ascii=False)
 
-    # 3.3 构建多模态RAG
     # print(len(chunks))
     rag = await initialize_rag(db_path)
     if not is_rag:
@@ -90,22 +85,22 @@ async def main():
         nest_asyncio.apply()
         rag.insert(content, '\n\n', True)
 
-    # 3.2 level 1 信息提取
+    # 3.2 level 1
     max_tokens = 12288
 
-    # 3.2.1 队列信息
+    # 3.2.1
     cohort_info = await cohort_agent(content=content, model=model_agent, lang=lang, max_tokens=max_tokens, rag=None)
     print('cohort:', cohort_info)
     with open(f'{out_path}/cohort_info.json', 'w', encoding='utf-8') as file:
         json.dump(cohort_info, file, indent=4, ensure_ascii=False)
 
-    # 3.2.2-4 结局信息 & 风险因素信息 & 风险效应量提取
+    # 3.2.2-4
     outcome_info = await outcome_agent(content=content, model=model_agent, lang=lang, max_tokens=max_tokens, rag=None)
     print('info:', outcome_info)
     with open(f'{out_path}/outcome_info.json', 'w', encoding='utf-8') as file:
         json.dump(outcome_info, file, indent=4, ensure_ascii=False)
 
-    # 3.2.2.1 结局信息解析与判断 & 风险因素信息解析与判断
+    # 3.2.2.1
     cancer_content = outcome_info['Outcome']
     risk_factor_content = outcome_info['Risk Factors']
     if not risk_factor_content:
@@ -122,7 +117,7 @@ async def main():
     with open(f'{out_path}/risk_factor_adj.json', 'w', encoding='utf-8') as file:
         json.dump(risk_factor_list, file, indent=4, ensure_ascii=False)
 
-    # 3.2 获得组合分组信息 & 4.1 根据组合分组信息和RAG对人数和效应量提取
+    # 3.2
     risk_stimate = outcome_info['RiskEstimate']
     design = outcome_info['Design']
     group_dict = {}

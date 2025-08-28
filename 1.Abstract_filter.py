@@ -46,7 +46,6 @@ async def fetch_model_response(session_id, content, semaphore, model, cycle_num=
         return session_id, response
 
 
-# 定义异步函数来并发处理多个会话
 async def handle_multiple_sessions(sessions, model, cycle_num=5):
     semaphore = asyncio.Semaphore(MAX_CONCURRENT_REQUESTS)
     tasks = [

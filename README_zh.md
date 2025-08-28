@@ -12,7 +12,6 @@
 
 ## 安装
 
----
 该项目的代码基于Python构建，且需要Python 3.10或更高版本。
 
 ### 依赖库
@@ -49,10 +48,10 @@ pip install -U 'volcengine-python-sdk[ark]'
    ```
 
 2. pdf文档解析
-    -
-    有很多优秀的pdf文档解析工具可以使用，如 [Dolphin](https://github.com/bytedance/Dolphin), [docling](https://github.com/docling-project/docling),
-    和 [LlamaParse](https://cloud.llamaindex.ai/) 等.由于计算资源的限制以及对中间文件（尤其是文献中的图表）利用的考量，
-    本项目采用 [MinerU](https://github.com/opendatalab/MinerU) 进行全文解析.
+   -
+   有很多优秀的pdf文档解析工具可以使用，如 [Dolphin](https://github.com/bytedance/Dolphin), [docling](https://github.com/docling-project/docling),
+   和 [LlamaParse](https://cloud.llamaindex.ai/) 等.由于计算资源的限制以及对中间文件（尤其是文献中的图表）利用的考量，
+   本项目采用 [MinerU](https://github.com/opendatalab/MinerU) 进行全文解析.
 
 3. 文献全文过滤
     - 输入文件为`tsv`格式，无需列名。第一列包含唯一的文献ID（可由用户定义），第二列包含与文献对应的PDF解析文件的文件路径。
@@ -71,11 +70,16 @@ pip install -U 'volcengine-python-sdk[ark]'
 
 ## 引用
 
---- 
 相关研究已被欧洲肿瘤内科学会（ESMO）接收，学术论文目前正在评审中。
+
+## 安全问题
+
+如果您在本项目中发现潜在的安全问题，或者认为自己可能发现了安全问题，请通过我们的[安全中心](https://security.bytedance.com/src)
+或[漏洞报告邮箱](sec@bytedance.com)通知字节跳动安全团队。
+
+请**不要**创建公开的GitHub问题。
 
 ## 许可证
 
----
 本项目采用MIT许可证授权——详情请参见LICENSE文件。
 
