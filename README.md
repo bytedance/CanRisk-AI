@@ -2,12 +2,13 @@
 
 ---
 
+[English](./README.md) | [简体中文](./README_zh.md)
 ## introduction
 
 [CanRisk-DB](https://www.canrisk-ai.com/) is a cancer risk factor database built on AI,
 while CanRisk-AI is the pipeline for implementing this database.
 CanRisk-DB is accessible via a web browser. The overall pipeline of CanRisk-AI includes abstract filtering,
-full-text filtering, GRAG (Graph-based Retrieval-Augmented Generation) construction, and multi-agent construction.
+full-text filtering, and multi-agent information extraction.
 The entire pipeline is as follows:
 ![img.png](imgs/img.png)
 
@@ -61,7 +62,7 @@ pip install -U 'volcengine-python-sdk[ark]'
       this study adopts [MinerU](https://github.com/opendatalab/MinerU) for full-text parsing.
 
 3. full-text screening
-   - The input file is in `tsv` format and does not require column names. The first column contains unique abstract IDs (which can be defined by the user), and the second column contains the file paths of the PDF parsed files corresponding to the literature.
+   - The input file is in `tsv` format and does not require column names. The first column contains unique paper IDs (which can be defined by the user), and the second column contains the file paths of the PDF parsed files corresponding to the literature.
    - Note that the PDF parsed files should be in TXT format (Markdown format is also acceptable).
    ```shell
    python 2.Full_text_filter.py input_file.tsv output_file.tsv
