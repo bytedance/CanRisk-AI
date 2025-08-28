@@ -10,29 +10,25 @@ from .base import encode_image, get_image_pixel_size
 
 def find_image_paths(data, paths=None):
     """
-    递归查找JSON数据中的'image_path'和对应的'type'，当'type' == 'table'时保存。
+    Recursively search for 'image_path' and corresponding 'type' in JSON data, and save them when 'type' == 'table'.
 
-    :param data: 当前的JSON数据，可以是字典、列表或其他类型
-    :param paths: 用于存储找到的(type, image_path)元组
-    :return: 包含符合条件的(type, image_path)的列表
+    :param data: The current JSON data, which can be a dictionary, list, or other type
+    :param paths: Used to store the found (type, image_path) tuples
+    :return: A list containing the eligible (type, image_path) tuples
     """
     if paths is None:
         paths = []
 
     if isinstance(data, dict):
-        # 如果当前数据是字典，检查其中是否有 'image_path' 和 'type'
         image_path = data.get("image_path")
         item_type = data.get("type")
-        # 当 'type' 为 'table' 且有 'image_path' 时，保存该路径
         if item_type == "table" and image_path:
             paths.append((item_type, image_path))
         if item_type == "image" and image_path:
             paths.append(('figure', image_path))
-        # 递归遍历字典中的所有子项
         for key, value in data.items():
             find_image_paths(value, paths)
     elif isinstance(data, list):
-        # 如果当前数据是列表，遍历列表中的每一项
         for item in data:
             find_image_paths(item, paths)
     return paths
@@ -61,10 +57,10 @@ def reference_clean(content):
 
 def paper_str_parse(file, middle_json, ref_clean=True):
     '''
-    从论文的md文件中获取论文信息，包括论文的文本、表格和图片。
-    :param file: 论文的md文件路径
-    :param middle_json: 论文的中间json文件路径
-    :return: 论文的文本、表格和图片
+    Obtain paper information from the paper's md file, including the paper's text, tables, and images.
+    :param file: Path to the paper's md file
+    :param middle_json: Path to the paper's intermediate json file
+    :return: The paper's text, tables, and images
     '''
     raw_text_content = open(file, 'r', encoding='utf-8').read()
     raw_text_content = raw_text_content.replace(

@@ -29,8 +29,8 @@ def json_parse(text: str) -> Dict:
 class FileInfoCollector:
     def __init__(self, directory):
         """
-        初始化 FileInfoCollector 类，接收输入目录作为输入。
-        :param directory: 要查找文件的目录路径
+        Initialize the FileInfoCollector class, which takes an input directory as input.
+        :param directory: the directory path where files are to be found
         """
         self.directory = directory.rstrip('/')
         self.base_name = os.path.basename(self.directory)
@@ -42,7 +42,7 @@ class FileInfoCollector:
 
     def _collect_files(self):
         """
-        遍历指定目录，查找所有的 Markdown 和 JSON 文件，并将它们的路径和基本名称存储在相应的列表中。
+        Traverse the specified directory, find all Markdown and JSON files, and store their paths and base names in the corresponding lists.
         """
         assert os.path.isfile(self.md_files)
         assert os.path.exists(self.json_files)
@@ -51,44 +51,34 @@ class FileInfoCollector:
 
 def merge_chunks(strings, min_length=500, max_length=1200):
     """
-    合并字符串列表中的元素，确保任意相邻两个元素的长度和不小于1200。
-    参数：
-        strings (list): 包含字符串的列表。
-    返回：
-        list: 合并后的字符串列表。
+    Merge the elements in the list of strings, ensuring that the sum of the lengths of any two adjacent elements is not less than 1200.
+    Parameters:
+        strings (list): A list containing strings.
+    Returns:
+        list: The merged list of strings.
     """
-    # 检查输入是否为空
     if not strings:
         return []
 
-    # 初始化结果列表
     result = []
-
-    # 初始化当前合并字符串
     current_string = ""
 
     for string in strings:
-        # 检查当前字符串长度是否小于500
         if len(string) < min_length:
-            # 尝试合并到当前字符串
             if len(current_string) + len(string) < max_length:
                 current_string += "\n" + string if current_string else string
             else:
-                # 当前字符串长度已经达到要求，保存并重置
                 result.append(current_string)
                 current_string = string
         else:
-            # 当前字符串长度>=500，先保存当前字符串
             if current_string:
                 result.append(current_string)
                 current_string = ""
             result.append(string)
 
-    # 最后检查是否有未保存的字符串
     if current_string:
         result.append(current_string)
 
-    # 确保所有相邻元素满足要求
     while len(result) > 1:
         merged = False
         for i in range(len(result) - 1):
@@ -105,16 +95,14 @@ def merge_chunks(strings, min_length=500, max_length=1200):
 
 def get_image_pixel_size(image_path):
     """
-    使用 cv2 模块读取指定路径的图片，并返回其像素尺寸。
-    :param image_path: 图片的文件路径
-    :return: 一个包含图片高度、宽度和通道数的元组 (height, width, channels)
+    Use the cv2 module to read the image at the specified path and return its pixel dimensions.
+    :param image_path: the file path of the image
+    :return: a tuple (height, width, channels) containing the image's height, width, and number of channels
     """
     try:
-        # 使用 cv2 读取图片
         img = cv2.imread(image_path)
         if img is None:
             raise FileNotFoundError(f"无法读取图片 '{image_path}'，可能文件不存在或格式不支持。")
-        # 获取图片的高度、宽度和通道数
         height, width, channels = img.shape
         return height, width, channels
     except FileNotFoundError as e:
