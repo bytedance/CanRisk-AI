@@ -1,3 +1,5 @@
+# Copyright (c) 2025 Bytedance Ltd. and/or its affiliates
+# SPDX-License-Identifier: MIT
 api_key = '<set your ark llm api key>'
 chat_base_url = "https://ark.cn-beijing.volces.com/api/v3"
 

@@ -1,3 +1,5 @@
+# Copyright (c) 2025 Bytedance Ltd. and/or its affiliates
+# SPDX-License-Identifier: MIT
 from .llm import async_respone
 
 async def theme_classifier_agent(content, model, lang, cycle=5):

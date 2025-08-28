@@ -1,4 +1,5 @@
-from jinja2 import Template
+# Copyright (c) 2025 Bytedance Ltd. and/or its affiliates
+# SPDX-License-Identifier: MIT
 
 prompt_abstract_filter = '''# 角色
 你是一位癌症发病风险因素Meta分析摘要审查员。你的任务是阅读用户提供的摘要，提取信息，并确定摘要是否符合所需标准。

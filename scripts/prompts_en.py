@@ -1,3 +1,5 @@
+# Copyright (c) 2025 Bytedance Ltd. and/or its affiliates
+# SPDX-License-Identifier: MIT
 from jinja2 import Template
 
 sys_prompt_grade_evaluator = '''# Role: Expert in Grading Cancer Epidemiology Evidence

@@ -1,7 +1,5 @@
-#!/bin/env python3
-# -*- coding: utf-8 -*-
-# auther: shiyuan tong
-# email: tongshiyuan@bytedance.com
+# Copyright (c) 2025 Bytedance Ltd. and/or its affiliates
+# SPDX-License-Identifier: MIT
 import os
 import json
 import asyncio
