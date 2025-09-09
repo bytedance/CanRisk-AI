@@ -10,8 +10,9 @@
 while CanRisk-AI is the pipeline for implementing this database.
 CanRisk-DB is accessible via a web browser. The overall pipeline of CanRisk-AI includes abstract filtering,
 full-text filtering, and multi-agent information extraction.
-The entire pipeline is as follows:
-![img.png](imgs/img.png)
+The entire pipeline is as follows:  
+
+![img.jpg](imgs/img.jpg)
 
 ## install
 

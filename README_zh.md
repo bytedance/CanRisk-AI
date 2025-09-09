@@ -7,8 +7,9 @@
 ## 介绍
 
 [CanRisk-DB](https://www.canrisk-ai.com/) 是一个由AI构建的癌症风险数据库,而 CanRisk-AI 是构建该数据库的流程.
-可以通过网页端访问 CanRisk-DB。 整个 CanRisk-AI 流程包括：摘要过滤，全文过滤和多智能体信息提取。整体流程图如下：
-![img.png](imgs/img.png)
+可以通过网页端访问 CanRisk-DB。 整个 CanRisk-AI 流程包括：摘要过滤，全文过滤和多智能体信息提取。整体流程图如下： 
+
+![img.jpg](imgs/img.jpg)
 
 ## 安装
 
